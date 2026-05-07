@@ -1,32 +1,74 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import nessie from "../assets/nessie.jpg";
 ---
 
 <Layout title="Sniffr — Software for dog-care businesses, built around the dog">
   <!-- Hero -->
-  <section class="px-6 pt-20 md:pt-32 pb-16">
-    <div class="mx-auto max-w-4xl">
-      <h1 class="font-display text-5xl md:text-7xl font-semibold tracking-tight text-balance">
-        Most dog software is built around the bill.<br />
-        <span class="text-[var(--color-accent)]">Sniffr is built around the dog.</span>
-      </h1>
-      <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] measure">
-        Multi-walker scheduling, client intake, photos, payments, reports — built with
-        Hamilton Bark, who run roughly 130 walks a week on Sniffr today.
-      </p>
-      <div class="mt-10 flex flex-wrap items-center gap-4">
-        <a
-          href="#book"
-          class="bg-[var(--color-ink)] text-[var(--color-bg)] px-6 py-3 rounded-md font-medium hover:bg-[var(--color-accent)] transition-colors"
-        >
-          Book a setup call
-        </a>
-        <a
-          href="/roadmap"
-          class="text-[var(--color-ink)] underline decoration-[var(--color-rule)] underline-offset-4 hover:decoration-[var(--color-accent)] hover:text-[var(--color-accent)] px-2 py-3"
-        >
-          See the roadmap &rarr;
-        </a>
+  <section class="px-6 pt-16 md:pt-24 pb-16 md:pb-24">
+    <div class="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+      <div class="md:col-span-7 order-2 md:order-1">
+        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-balance">
+          Most dog software is built around the bill.<br />
+          <span class="text-[var(--color-accent)]">Sniffr is built around the dog.</span>
+        </h1>
+        <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] measure">
+          Multi-walker scheduling, client intake, photos, payments, reports &mdash; built
+          with Hamilton Bark, who run roughly 130 walks a week on Sniffr today.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a
+            href="#book"
+            class="bg-[var(--color-ink)] text-[var(--color-bg)] px-6 py-3 rounded-md font-medium hover:bg-[var(--color-accent)] transition-colors"
+          >
+            Book a setup call
+          </a>
+          <a
+            href="/roadmap"
+            class="text-[var(--color-ink)] underline decoration-[var(--color-rule)] underline-offset-4 hover:decoration-[var(--color-accent)] hover:text-[var(--color-accent)] px-2 py-3"
+          >
+            See the roadmap &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-5 order-1 md:order-2">
+        <figure class="bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-20px_rgba(184,80,30,0.25)] max-w-sm mx-auto md:ml-auto md:mr-0 ring-1 ring-[var(--color-rule)]">
+          <Image
+            src={nessie}
+            alt="Nessie, a golden retriever, resting close to the camera"
+            widths={[400, 600, 800]}
+            sizes="(max-width: 768px) 80vw, 400px"
+            class="w-full aspect-[3/4] object-cover"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <figcaption class="p-5">
+            <div class="flex items-baseline justify-between gap-3">
+              <span class="font-display text-2xl font-semibold tracking-tight">Nessie</span>
+              <span class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Today</span>
+            </div>
+            <p class="mt-3 text-[var(--color-muted)] leading-relaxed">
+              "Front-row seat. As usual."
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2 text-sm">
+              <span class="px-2.5 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🐕 hello</span>
+              <span class="px-2.5 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">👃 nose first</span>
+              <span class="px-2.5 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">💛 regular</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-[var(--color-rule)] text-xs text-[var(--color-muted)] flex items-center gap-2">
+              <svg width="12" height="12" viewBox="0 0 64 64" fill="currentColor" class="text-[var(--color-accent)]">
+                <circle cx="20" cy="22" r="6"/>
+                <circle cx="44" cy="22" r="6"/>
+                <circle cx="12" cy="36" r="5"/>
+                <circle cx="52" cy="36" r="5"/>
+                <ellipse cx="32" cy="44" rx="14" ry="11"/>
+              </svg>
+              <span>A Sniffr memory</span>
+            </div>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
