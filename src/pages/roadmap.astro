@@ -1,0 +1,207 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Sniffr Roadmap — 2026"
+  description="The order we're shipping in, and roughly when. Every line below is real, partially built, and on the calendar to land before the end of 2026."
+>
+  <article class="px-6 py-20 md:py-28">
+    <div class="mx-auto max-w-3xl">
+      <header>
+        <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+          Roadmap
+        </p>
+        <h1 class="font-display text-5xl md:text-7xl font-semibold tracking-tight mt-3 text-balance">
+          Sniffr 2026
+        </h1>
+        <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] leading-relaxed">
+          Sniffr is built by one founder using a custom AI agent infrastructure that
+          ships features at the pace of a small team. Everything below is real, partially
+          built, and on the calendar to land before the end of 2026. We'll move dates as
+          we learn, but not by years.
+        </p>
+      </header>
+
+      <!-- V1 -->
+      <section class="mt-20">
+        <div class="flex items-baseline justify-between flex-wrap gap-2">
+          <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            V1 &mdash; Foundation
+          </h2>
+          <span class="text-sm font-medium px-3 py-1 rounded-full bg-[var(--color-accent)] text-white">
+            Live since May 2026
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-[var(--color-muted)]">
+          Everything required to run a serious dog-walking business &mdash; multi-walker
+          scheduling, intake, payments, reports &mdash; built around the dog rather than
+          the invoice.
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> The Window/Horizon scheduling model with a variable per-business commitment radius</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Self-onboarding QR card &rarr; structured intake &rarr; auto-Calendar Meet &amp; Greet</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Voice-to-tagged-events for walks (talk through the walk, get a structured timeline)</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Photos as durable dog memories with auto-generated hashtags</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Two-phase auto-positioning: regular-walker inference + statistical time prediction</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> BYO Stripe Connect with billing cycles</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Multi-service architecture, proven by BarkVentures running in production at Hamilton Bark</li>
+        </ul>
+      </section>
+
+      <!-- V1.5 -->
+      <section class="mt-20">
+        <div class="flex items-baseline justify-between flex-wrap gap-2">
+          <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            V1.5 &mdash; Self-Service
+          </h2>
+          <span class="text-sm font-medium px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">
+            Anticipated Q3 2026
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-[var(--color-muted)]">
+          Smoothing the walker-acquisition path so onboarding doesn't depend on a setup
+          call, and turning on the AI assists that have been shipping in the background.
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Self-serve walker signup at sniffrpack.com &rarr; working tenant + Stripe Connect + admin login + branded subdomain end-to-end</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> AI-assist generate: auto-caption drafts on photos, auto-report drafts on walks (always editable; the walker stays in the driver's seat)</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Persisted per-dog personality summaries powering the AI assists</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Data import from Time To Pet, Scout, and Precise &mdash; making the switch a one-click, not a weekend</li>
+        </ul>
+      </section>
+
+      <!-- V2 -->
+      <section class="mt-20">
+        <div class="flex items-baseline justify-between flex-wrap gap-2">
+          <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            V2 &mdash; Network
+          </h2>
+          <span class="text-sm font-medium px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">
+            Anticipated Q3 2026
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-[var(--color-muted)]">
+          Walkers stop feeling like solo operators. The community starts to act like a
+          labor network &mdash; covering each other's days off, sharing trust, getting
+          paid for it cleanly.
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Tenant-to-tenant work sharing: hand a Window to another Sniffr walker at their rates</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Optional client-side M&amp;G workflow before a handoff (some clients say <em>"I trust anyone you trust"</em>; some don't &mdash; the system supports both)</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Tenant-to-tenant payout flow via Stripe Connect</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Each walker's coverage circle: the trusted nearby Sniffr walkers they can hand work to</li>
+        </ul>
+        <p class="mt-6 text-lg leading-relaxed italic text-[var(--color-muted)]">
+          V2 is when Sniffr stops being software for <em>one</em> walker's business and
+          starts being connective tissue <em>between</em> businesses.
+        </p>
+      </section>
+
+      <!-- V3 -->
+      <section class="mt-20">
+        <div class="flex items-baseline justify-between flex-wrap gap-2">
+          <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            V3 &mdash; Ecosystem
+          </h2>
+          <span class="text-sm font-medium px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">
+            Anticipated Q4 2026
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-[var(--color-muted)]">
+          The platform opens &mdash; to other AI agents, and to service shapes beyond walks.
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Sniffr MCP server</strong>: client AI agents like ChatGPT, Claude, and Gemini can read a dog's recent walks, photos, and rolling personality context. When a customer asks their assistant <em>"how was Wally's week?"</em>, they get a real answer. <span class="text-[var(--color-muted)]">(Already built; shipping pending security hardening so a client agent can't be used to bypass tenant rules.)</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Multi-service rollout: boarding, daycare, grooming, and training plugins, on the same architecture BarkVentures already proves</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Bespoke service shapes</strong>: Hamilton Bark designed BarkVenture for mountain trips with their dogs; if you have a service shape that doesn't exist yet, talk to us. Once we build it, every Sniffr walker can use it.</li>
+        </ul>
+      </section>
+
+      <!-- V4 -->
+      <section class="mt-20">
+        <div class="flex items-baseline justify-between flex-wrap gap-2">
+          <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            V4 &mdash; Community
+          </h2>
+          <span class="text-sm font-medium px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">
+            Anticipated Q4 2026 / Early 2027
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-[var(--color-muted)]">
+          The dog-owner side of Sniffr comes online, and the social graph that's been
+          computing quietly in the photo-embedding layer surfaces as Circles and Packs.
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Circles</strong> &mdash; your dog's auto-detected network of dogs they've actually met. Triggered when a recognized friend's owner is at the same park at the same time. Confirmed by the photo uploader. No facial-recognition ML &mdash; geofence + app metadata + a one-tap <em>"is that Goldie?"</em> prompt gets us there.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Packs</strong> &mdash; branded human communities that form around shared parks and times. Invite links, shared photo streams, event management, and a Pack fund.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Walker advertising against Packs: <em>"20% of June's walks booked through this link goes to the Sunday Morning Dachshund Pack."</em></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> The referral network made visible, measurable, and economically active.</li>
+        </ul>
+        <p class="mt-6 text-lg leading-relaxed italic text-[var(--color-muted)]">
+          V4 is when the consumer side of Sniffr starts driving walker acquisition on its
+          own. Owners love their Pack, push their walker to join Sniffr. Walkers join
+          because their Pack is here. The flywheel closes.
+        </p>
+      </section>
+
+      <!-- How we ship -->
+      <section class="mt-24 pt-16 border-t border-[var(--color-rule)]">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          How we ship
+        </h2>
+
+        <div class="mt-8 space-y-6 text-lg leading-relaxed">
+          <p>
+            Most software in this space comes from one of two places. <strong>Marketplaces</strong>
+            like Rover and Wag &mdash; VC-backed, take a cut from both sides of every
+            transaction, and treat your customers as inventory. Or <strong>invoicing
+            platforms</strong> like Time To Pet, Scout, and Precise &mdash; older, slower,
+            originally built around the bill and retrofitted with everything else over the
+            years.
+          </p>
+          <p>
+            Sniffr is neither. It's a product of <strong>Papyrus Labs AI</strong>, a research
+            lab working at the intersection of AI and human cognition. <span class="text-[var(--color-muted)]"><em>(Other Papyrus Labs products include Seshat, structural code intelligence used by AI agents.)</em></span> Sniffr is the lab's applied
+            dog-care project &mdash; and the only one with a working dog-walking business
+            shipping every line of code in production.
+          </p>
+          <p>
+            <strong>Hamilton Bark runs ~130 walks a week, $250K/year in service revenue,
+            on Sniffr today.</strong> Every feature listed above survives contact with
+            that business or it doesn't ship.
+          </p>
+          <p>
+            <strong>Your Stripe is your Stripe. Your customers are yours.</strong> Sniffr
+            is software, not a marketplace. We don't broker your relationships, take a
+            cut of your customer revenue, or hold your book of business hostage. When you
+            leave us, your customers leave with you. That's not a feature &mdash; it's the
+            whole stance, and it's the reason Sniffr exists.
+          </p>
+          <p>
+            <strong>Built fast, by one founder, without outside funding.</strong> Sniffr's
+            velocity comes from Papyrus Labs' custom multi-agent build infrastructure
+            &mdash; the same class of tooling that lets a small team out-ship a venture-backed
+            eight. That's how a single founder ships an entire year of features in a year,
+            against a real production customer, without taking money that would force the
+            product to extract from the people using it.
+          </p>
+          <p class="italic text-[var(--color-muted)]">
+            Anticipated dates are anticipated, not promised &mdash; but the tables are
+            built, the plugins are partially written, and the agents are running. We'll
+            move dates as we learn, but not by years.
+          </p>
+        </div>
+
+        <div class="mt-12">
+          <a
+            href="/#book"
+            class="bg-[var(--color-ink)] text-[var(--color-bg)] px-6 py-3 rounded-md font-medium hover:bg-[var(--color-accent)] transition-colors inline-block"
+          >
+            Book a setup call
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

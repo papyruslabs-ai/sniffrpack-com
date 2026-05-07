@@ -1,0 +1,38 @@
+---
+const path = Astro.url.pathname;
+---
+
+<nav class="border-b border-[var(--color-rule)]">
+  <div class="mx-auto max-w-5xl px-6 py-5 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2 text-[var(--color-ink)]">
+      <svg width="22" height="22" viewBox="0 0 64 64" fill="currentColor" class="text-[var(--color-accent)]">
+        <circle cx="20" cy="22" r="6"/>
+        <circle cx="44" cy="22" r="6"/>
+        <circle cx="12" cy="36" r="5"/>
+        <circle cx="52" cy="36" r="5"/>
+        <ellipse cx="32" cy="44" rx="14" ry="11"/>
+      </svg>
+      <span class="font-display text-xl font-semibold tracking-tight">Sniffr</span>
+    </a>
+    <div class="flex items-center gap-7 text-sm font-medium">
+      <a
+        href="/roadmap"
+        class={`hover:text-[var(--color-accent)] transition-colors ${path === "/roadmap" ? "text-[var(--color-accent)]" : "text-[var(--color-muted)]"}`}
+      >
+        Roadmap
+      </a>
+      <a
+        href="https://app.sniffrpack.com"
+        class="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors"
+      >
+        Sign in
+      </a>
+      <a
+        href="#book"
+        class="bg-[var(--color-ink)] text-[var(--color-bg)] px-4 py-2 rounded-md hover:bg-[var(--color-accent)] transition-colors"
+      >
+        Book a call
+      </a>
+    </div>
+  </div>
+</nav>

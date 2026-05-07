@@ -1,0 +1,370 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Sniffr — Software for dog-care businesses, built around the dog">
+  <!-- Hero -->
+  <section class="px-6 pt-20 md:pt-32 pb-16">
+    <div class="mx-auto max-w-4xl">
+      <h1 class="font-display text-5xl md:text-7xl font-semibold tracking-tight text-balance">
+        Most dog software is built around the bill.<br />
+        <span class="text-[var(--color-accent)]">Sniffr is built around the dog.</span>
+      </h1>
+      <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] measure">
+        Multi-walker scheduling, client intake, photos, payments, reports — built with
+        Hamilton Bark, who run roughly 130 walks a week on Sniffr today.
+      </p>
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a
+          href="#book"
+          class="bg-[var(--color-ink)] text-[var(--color-bg)] px-6 py-3 rounded-md font-medium hover:bg-[var(--color-accent)] transition-colors"
+        >
+          Book a setup call
+        </a>
+        <a
+          href="/roadmap"
+          class="text-[var(--color-ink)] underline decoration-[var(--color-rule)] underline-offset-4 hover:decoration-[var(--color-accent)] hover:text-[var(--color-accent)] px-2 py-3"
+        >
+          See the roadmap &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Thesis -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="font-display text-4xl md:text-6xl font-semibold tracking-tight text-balance">
+        Dog care isn't a marketplace.<br />
+        <span class="text-[var(--color-accent)]">It's a referral network.</span>
+      </h2>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          Rover and Wag built their businesses on a wrong assumption — that dog walking is
+          a labor market where strangers trade hours for dollars. That works for one walk.
+          It doesn't work for the <em>relationship</em>, which is the actual product. Real
+          dog care lives in trust networks: a neighbor recommends Sebastian, Sebastian's
+          customers tell their friends, walkers earn relationships and keep them for years.
+          Then a marketplace tries to wedge a 20% tax onto a relationship the walker built.
+        </p>
+        <p>
+          Time To Pet, Scout, and Precise figured out that walkers shouldn't be marketplace
+          inventory — but they still treat dog care as a billing problem. Their data model
+          is the invoice. Photos and notes hang off the invoice as decorations. The dog is
+          a line item.
+        </p>
+
+        <p class="font-display text-2xl md:text-3xl pt-4">
+          Sniffr starts from the dog.
+        </p>
+
+        <ul class="space-y-3 pl-6 border-l-2 border-[var(--color-accent)]">
+          <li>Photos belong to the dog and outlive any single visit.</li>
+          <li>The walker's relationship to the dog is a <em>learned</em> signal — not a rule you declare and forget.</li>
+          <li>Service shapes — walks today, more soon — plug into a substrate that knows the dog's life as a continuum.</li>
+        </ul>
+
+        <p>
+          A walker who switches to Sniffr feels the difference within a week. The software
+          is shaped like the work, not shaped like the bill.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 3: QR / Intake -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        Onboarding
+      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold tracking-tight mt-3 text-balance">
+        Your business card is your intake form.
+      </h2>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          Hand a prospect a card. They scan the QR. Five minutes later, they've signed up,
+          told you everything you need to know about their dog, picked a payment method,
+          and landed on your Google Calendar for a Meet &amp; Greet.
+        </p>
+        <p>
+          You did no data entry. They did no email tag. Every Sniffr card is a tracked
+          invite — you'll know which card brought which client, and which conversations
+          turned into customers.
+        </p>
+        <p>
+          By the time you say hello at the M&amp;G, you already know their dog's name,
+          their vet, and how often they want to walk.
+        </p>
+
+        <div class="border-l-2 border-[var(--color-rule)] pl-6 text-[var(--color-muted)] italic">
+          Time To Pet onboarding is walker-mediated email tag. Sniffr inverts the polarity:
+          the client onboards themselves, attached to the right walker, in one scan.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 4: Windows / Horizon -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        Scheduling Model
+      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold tracking-tight mt-3 text-balance">
+        Sell Windows. Walks happen automatically.
+      </h2>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          A <strong>Window</strong> is a standing arrangement: <em>"Wednesday evenings
+          between 6 and 7:30, 30 minutes with Wally."</em> You sell those once. Walks get
+          generated every week the Window is active.
+        </p>
+        <p>
+          A <strong>Horizon</strong> is your commitment radius — how far ahead you're
+          willing to lock in walks. Some walkers run a 3-day Horizon; some run 21. As your
+          team grows, you raise it. The same software fits a solo walker and a 20-walker
+          shop because the radius is yours to choose.
+        </p>
+        <p>
+          Pricing is captured the moment a Window is created. Payment doesn't run until
+          the Horizon is locked. Predictable cash flow on a cadence you control — not
+          a per-walk billing scramble.
+        </p>
+
+        <div class="border-l-2 border-[var(--color-rule)] pl-6 text-[var(--color-muted)] italic">
+          Most dog software books visits with optional recurrence — schedule-as-calendar.
+          Sniffr's primitives match how a multi-walker shop actually thinks about its week:
+          standing commitments, planned horizons, and walks as the output of both.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 5: Voice / Reports -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        Walk Reports
+      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold tracking-tight mt-3 text-balance">
+        Talk through the walk. Sniffr listens.
+      </h2>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          Walkers don't have to be writers. Tell Sniffr what happened on the walk — out
+          loud — and we'll turn it into a tagged, searchable timeline for the dog.
+        </p>
+
+        <blockquote class="bg-white/60 border border-[var(--color-rule)] rounded-lg p-6 my-8 not-italic">
+          <p class="text-[var(--color-muted)]">
+            "Picked up Biscuit. He barked when I came in, but as soon as he saw the leash
+            he knew what was up. On the way to the dog park he saw an ambulance on 6th and
+            sang the song of his people. Played with Goldie at the park."
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🐕 leash-ready</span>
+            <span class="px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🚑🎶 ambulance song</span>
+            <span class="px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🐾 played with Goldie</span>
+          </div>
+        </blockquote>
+
+        <p>
+          Each moment becomes a structured event on the dog's timeline, tagged with emojis,
+          searchable across weeks. Snap photos along the way. Caption them yourself; we'll
+          handle the hashtags. Write a full walk report when it matters; skip it when the
+          audio and photos already tell the story.
+        </p>
+
+        <p>
+          For a walker doing 20+ walks a week, this is the single biggest time-saver in
+          Sniffr. Roughly 10 minutes of paperwork per walk &mdash; gone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 6: Scheduling intelligence -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        Scheduling Intelligence
+      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold tracking-tight mt-3 text-balance">
+        Sniffr learns who walks who.
+      </h2>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          Most software needs you to tell it who walks Goldie. Sniffr figures it out.
+        </p>
+        <p>
+          After a few weeks, Sniffr knows that Sarah is Goldie's regular &mdash; not because
+          you set a rule, but because Sarah has actually been walking Goldie for eight
+          weeks. New Wednesday Windows route to Sarah automatically.
+        </p>
+        <p>
+          Sniffr also predicts the time <em>within</em> the Window. Sarah's been arriving
+          around 6:15 each week, not 6:00 sharp. The next walk gets scheduled for 6:15,
+          with a confidence score. Reassignments suggest the right replacement and won't
+          let you double-book.
+        </p>
+        <p class="font-display text-2xl md:text-3xl pt-4 text-[var(--color-accent)]">
+          The longer you run on Sniffr, the better it gets at running itself.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 7: Your business -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        Ownership
+      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold tracking-tight mt-3 text-balance">
+        Your business. Your Stripe. Your customers.
+      </h2>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          Sniffr is software, not a marketplace.
+        </p>
+        <p>
+          Bring your own Stripe Connect account. Hire your own employees. Set your own
+          rates. Charge whatever you charge &mdash; Sniffr never touches your customer
+          relationships. When you leave us, your customers come with you.
+        </p>
+        <p>
+          We don't take a cut of your customer revenue. We don't broker your relationships.
+          We don't decide who can work for you.
+        </p>
+        <p class="font-display text-2xl md:text-3xl pt-4">
+          This is the whole stance. It's the reason Sniffr exists.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 8: Roadmap teaser -->
+  <section class="px-6 py-24 md:py-32 bg-white/40">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        What's next
+      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold tracking-tight mt-3 text-balance">
+        Sniffr ships fast.
+      </h2>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          Self-serve walker signup, AI-assisted reports, walker-to-walker work sharing,
+          MCP for client AI agents, multi-service plugins, and the social layer that
+          turns dog parks into Packs and dogs into Circles &mdash; all anticipated by the
+          end of 2026.
+        </p>
+        <p>
+          The tables are built. The plugins are partially written. The agents are running.
+        </p>
+        <a
+          href="/roadmap"
+          class="inline-block mt-4 text-[var(--color-accent)] font-medium hover:underline"
+        >
+          See the full roadmap &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 9: Hamilton Bark proof -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        Built with
+      </p>
+      <h2 class="font-display text-4xl md:text-5xl font-semibold tracking-tight mt-3 text-balance">
+        A real dog-walking business.
+      </h2>
+
+      <div class="mt-10 grid grid-cols-3 gap-6 md:gap-10 max-w-2xl">
+        <div>
+          <div class="font-display text-4xl md:text-5xl font-semibold text-[var(--color-accent)]">130</div>
+          <div class="text-sm text-[var(--color-muted)] mt-1">walks per week</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl md:text-5xl font-semibold text-[var(--color-accent)]">6</div>
+          <div class="text-sm text-[var(--color-muted)] mt-1">walkers on staff</div>
+        </div>
+        <div>
+          <div class="font-display text-4xl md:text-5xl font-semibold text-[var(--color-accent)]">$250K</div>
+          <div class="text-sm text-[var(--color-muted)] mt-1">annual service revenue</div>
+        </div>
+      </div>
+
+      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+        <p>
+          <strong>Hamilton Bark</strong> runs everything you've read about above on Sniffr,
+          today. Every feature listed survives contact with that business or it doesn't ship.
+        </p>
+        <p>
+          Sniffr launched after a year of building against a real production customer.
+          Not in a sandbox. Not in a pitch deck. In a working dog-walking business with
+          paying clients and a payroll.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
+
+  <!-- Screen 10: CTA -->
+  <section id="book" class="px-6 py-24 md:py-32">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="font-display text-4xl md:text-6xl font-semibold tracking-tight text-balance">
+        Ready to switch?
+      </h2>
+
+      <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] measure mx-auto">
+        If you're running 1&ndash;10 walkers and you've felt the limits of Time To Pet,
+        Scout, or Precise &mdash; or you're starting a business and you want to start it
+        right &mdash; let's talk. Setup calls are 30 minutes, run by the founder, and
+        cover data migration, Stripe Connect, and walker training.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <a
+          href="mailto:joseph@sniffrpack.com?subject=Sniffr%20setup%20call"
+          class="bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-4 rounded-md font-medium text-lg hover:bg-[var(--color-accent)] transition-colors"
+        >
+          Book a setup call
+        </a>
+        <a
+          href="/roadmap"
+          class="text-[var(--color-ink)] underline decoration-[var(--color-rule)] underline-offset-4 hover:decoration-[var(--color-accent)] hover:text-[var(--color-accent)] px-2 py-4"
+        >
+          See the roadmap first &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
