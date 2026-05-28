@@ -1,0 +1,295 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const effective = "May 24, 2026";
+const updated = "May 28, 2026";
+
+const subprocessors = [
+  ["Supabase", "Database hosting (PostgreSQL)", "Stores your account, dogs, walks, messages, and so on"],
+  ["Cloudflare", "Image hosting (Cloudflare Images), serverless functions (Workers)", "Hosts dog photos, runs AI captioning and transcription"],
+  ["Replicate", "AI model hosting", "Runs the models that caption photos and extract events from walk-report audio"],
+  ["Stripe", "Payment processing (Stripe Connect)", "Processes all payments; stores card data per PCI-DSS"],
+  ["Render", "Backend hosting", "Runs the Sniffr API"],
+  ["Apple Push Notification service (APNs)", "iOS push delivery", "Delivers notifications to iPhone users"],
+  ["Firebase Cloud Messaging (FCM)", "Android push delivery", "Delivers notifications to Android users"],
+  ["Web Push providers", "Browser push delivery (Chrome, Firefox, Safari)", "Delivers notifications to web users"],
+];
+---
+
+<Layout
+  title="Privacy Policy — Sniffr"
+  description="How Sniffr handles your data — plain language, no dark patterns. What we collect, why, and the control you have over it."
+>
+  <article class="px-6 py-20 md:py-28">
+    <div class="mx-auto max-w-3xl">
+      <header>
+        <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+          Legal
+        </p>
+        <h1 class="font-display text-5xl md:text-7xl font-semibold tracking-tight mt-3 text-balance">
+          Privacy Policy
+        </h1>
+        <p class="mt-6 text-sm text-[var(--color-muted)]">
+          Effective {effective} &middot; Last updated {updated}
+        </p>
+        <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] leading-relaxed">
+          This policy explains what information Sniffr collects when you use the Sniffr
+          app or website, why, and what control you have over it. It applies to the Sniffr
+          mobile app (Android and iOS), the web app at app.sniffrpack.com, and this
+          marketing site (collectively, &ldquo;Sniffr&rdquo;). Sniffr is operated by
+          Papyrus Labs, based in Maplewood, New Jersey, United States.
+        </p>
+      </header>
+
+      <!-- How Sniffr works -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          A note on how Sniffr works
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          Sniffr is a platform that dog-walking businesses use to run their operations.
+          When you use the app, you&rsquo;re using software that is run by your dog
+          walker&rsquo;s business on top of Sniffr. That means two parties handle your data:
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          <li class="flex gap-3">
+            <span class="text-[var(--color-accent)] font-semibold">&middot;</span>
+            <span><strong>Your dog walker&rsquo;s business</strong> (your &ldquo;tenant&rdquo; &mdash; for example, Hamilton Bark) decides what data to collect, how to use it, and how long to keep it. They are the data controller.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-[var(--color-accent)] font-semibold">&middot;</span>
+            <span><strong>Sniffr</strong> (Papyrus Labs) provides the platform that stores and processes the data on their behalf. We are the data processor.</span>
+          </li>
+        </ul>
+        <p class="mt-6 text-lg text-[var(--color-muted)] leading-relaxed">
+          If you have questions about your data &mdash; what&rsquo;s stored, how to delete
+          it, how it&rsquo;s used &mdash; your first stop should be your dog walker&rsquo;s
+          business. We help them respond to those requests but we don&rsquo;t make those
+          decisions independently. This marketing site is the one exception: here, Sniffr
+          is the controller and only collects what&rsquo;s described in the &ldquo;This
+          site&rdquo; section below.
+        </p>
+      </section>
+
+      <!-- What we collect -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          What we collect
+        </h2>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Account information</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          When you sign up (as a dog owner, walker, or business admin): name, email
+          address, phone number (optional), password (stored hashed &mdash; we never see
+          your actual password), and an optional profile photo.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Address and home-access information</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          For dog owners, so walkers can actually do walks: home address, and any key
+          location notes, lockbox codes, parking notes, or building access codes you give
+          your walker. This is sensitive. It&rsquo;s stored encrypted at rest, visible only
+          to your dog walker&rsquo;s business and the walkers they assign to you, and never
+          shared outside that business.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Emergency contact</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          Optional but encouraged: emergency contact name, phone, and relationship &mdash;
+          so we can reach someone if there&rsquo;s an incident during a walk.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Dog information</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          Name, breed, age, weight, color, behavioral notes; veterinarian contact
+          (optional); medical notes, allergies, medications (optional); and dog photos you
+          or your walker upload.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Service information</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          Walks scheduled and completed, recurring &ldquo;windows&rdquo; you set up, walk
+          reports, photos taken during walks, and messages exchanged between you, your
+          walker, and your dog walker&rsquo;s business.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Audio recordings (walkers only)</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          When walkers dictate a walk report, the audio is recorded, transmitted securely
+          to our transcription service, converted to text, and then the audio is discarded.
+          We retain only the text transcript. We do not store the audio file beyond the
+          transcription step.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Camera and microphone</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          The mobile app uses your camera (to photograph dogs and walk activity) and
+          microphone (for walk-report dictation). Access is granted by you at the OS level
+          when first requested; you can revoke it anytime in your device settings.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Payment information</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          We use Stripe (Stripe Connect) to process payments. Sniffr never sees, stores, or
+          transmits your card number, CVV, or bank credentials &mdash; those go directly
+          from your device to Stripe. We store only transaction metadata (amount, date,
+          what it was for) and a Stripe token that lets your dog walker&rsquo;s business
+          reconcile payments.
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">Device and app information</h3>
+        <p class="mt-3 text-lg text-[var(--color-muted)] leading-relaxed">
+          Your device&rsquo;s push-notification token (an opaque identifier from Apple,
+          Google, or your browser) so we can notify you about walks and messages; app and
+          OS version for diagnostics; and basic crash reports if the app crashes (stack
+          traces and device model, no personal screen content).
+        </p>
+
+        <h3 class="font-display text-xl font-semibold mt-8">What we do <em>not</em> collect</h3>
+        <ul class="mt-3 space-y-2 text-lg leading-relaxed text-[var(--color-muted)]">
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> We do not track your live location.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> We do not read your contacts, calendar, SMS, or call history.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> We do not use third-party advertising trackers or sell your data.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> We do not use profile-building analytics SDKs (no Facebook SDK, no Google Analytics).</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> We do not collect photos from your camera roll unless you explicitly pick one to upload.</li>
+        </ul>
+      </section>
+
+      <!-- How we use it -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          How we use this information
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          To provide the service you signed up for (scheduling, reports, payments,
+          messaging), authenticate you, notify you about your dog&rsquo;s walks and
+          messages, generate walk reports (including automated transcription and
+          AI-generated photo captions), diagnose bugs, and improve the platform in
+          aggregated, anonymized form. We do not use your personal information to train AI
+          models &mdash; per-walk AI processing is one-shot, and inputs are not retained by
+          the AI provider for training.
+        </p>
+      </section>
+
+      <!-- Sharing -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          How we share information
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          Sniffr uses a small set of third-party services to operate &mdash; sub-processors
+          that handle data on our behalf under contracts requiring them to protect it:
+        </p>
+        <div class="mt-6 overflow-x-auto">
+          <table class="w-full border-collapse text-base">
+            <thead>
+              <tr class="border-b border-[var(--color-rule)] text-left">
+                <th class="py-2 pr-4 font-semibold">Service</th>
+                <th class="py-2 pr-4 font-semibold">What they handle</th>
+                <th class="py-2 font-semibold">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              {subprocessors.map(([service, what, why]) => (
+                <tr class="border-b border-[var(--color-rule)] align-top">
+                  <td class="py-2 pr-4 font-medium">{service}</td>
+                  <td class="py-2 pr-4 text-[var(--color-muted)]">{what}</td>
+                  <td class="py-2 text-[var(--color-muted)]">{why}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-6 text-lg text-[var(--color-muted)] leading-relaxed">
+          Beyond those, data goes only to your dog walker&rsquo;s business (the controller
+          of your data), to you (you can view your own data in the app), and to law
+          enforcement if legally required (we&rsquo;ll tell you unless prohibited). We do
+          not sell data or share it with advertisers, data brokers, or marketing partners.
+        </p>
+      </section>
+
+      <!-- Retention -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          How long we keep data
+        </h2>
+        <ul class="mt-4 space-y-3 text-lg leading-relaxed text-[var(--color-muted)]">
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> Active accounts: kept while you have an active account with your dog walker&rsquo;s business.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> Inactive accounts: when your business leaves Sniffr, they take their customer data with them; deleted accounts are removed within 30 days.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> Walk audio: discarded as soon as it&rsquo;s transcribed (typically seconds).</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> Photos: kept while your account is active; deleted with your account.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> Payment records: retained 7 years for financial recordkeeping.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)]">&middot;</span> Backups: rolling 90-day; deleted data is purged from backups within 90 days.</li>
+        </ul>
+      </section>
+
+      <!-- Rights -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          Your rights
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          You can, at any time: view your account, dogs, walks, photos, and messages in the
+          app; edit your contact info, address, and dog details; delete photos and messages
+          directly; delete your account (contact your dog walker&rsquo;s business or email
+          us &mdash; complete within 30 days, except payment records as noted); and export
+          your data (email us for a machine-readable copy within 30 days). If you live in a
+          jurisdiction with specific privacy rights (California CCPA/CPRA, EU/UK GDPR,
+          Canada PIPEDA, etc.), those rights apply and we will honor them.
+        </p>
+      </section>
+
+      <!-- Children / Security -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          Children &amp; security
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          Sniffr is not directed at children under 13 and we do not knowingly collect their
+          data; email us and we&rsquo;ll delete any such account. (Dogs of all ages are
+          welcome.) We protect data with HTTPS/TLS 1.2+ everywhere, hashed passwords
+          (bcrypt), short-lived session tokens in secure device storage, encryption at
+          rest, and restricted, audited production access. If we ever experience a breach
+          affecting your data, we will notify you and the appropriate authorities promptly.
+        </p>
+      </section>
+
+      <!-- This site -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          This site
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          On sniffrpack.com (run directly by Sniffr) we collect only server logs (IP
+          address, user-agent, page requested, retained 30 days for security and traffic
+          analysis) and your email address if you fill out a &ldquo;book a setup
+          call&rdquo; form. We do not use cookies beyond what is strictly necessary for the
+          site to function, and there are no tracking pixels.
+        </p>
+      </section>
+
+      <!-- Changes / Contact -->
+      <section class="mt-16 border-t border-[var(--color-rule)] pt-10">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          Changes &amp; contact
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          If we make material changes to this policy, we&rsquo;ll notify you in-app and via
+          email before they take effect; the &ldquo;Last updated&rdquo; date above tracks
+          the current version. For privacy questions, data access or deletion requests, or
+          anything else here, email
+          <a href="mailto:joe@sniffrpack.com" class="underline decoration-[var(--color-rule)] hover:text-[var(--color-accent)] hover:decoration-[var(--color-accent)]">joe@sniffrpack.com</a>
+          or write to Papyrus Labs, Maplewood, NJ, United States. For questions about how
+          your specific data is used or stored, contact your dog walker&rsquo;s business
+          first &mdash; they&rsquo;re the controller of that data.
+        </p>
+        <p class="mt-8 text-sm text-[var(--color-muted)] italic leading-relaxed">
+          This is a plain-language privacy policy. We&rsquo;ve tried to be accurate and
+          complete rather than legalese-thorough. If something here is unclear or seems to
+          contradict what the app actually does, that&rsquo;s a bug &mdash; please tell us
+          and we&rsquo;ll fix it.
+        </p>
+      </section>
+    </div>
+  </article>
+</Layout>
