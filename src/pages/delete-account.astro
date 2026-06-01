@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const updated = "June 1, 2026";
+
+const deleted = [
+  "Your profile: name, email, phone number, address, and any home-access notes (lockbox codes, parking/building access).",
+  "Your dogs’ profiles and all photos you or your walker uploaded of them.",
+  "Your messages with your walker and your dog-walking business.",
+  "Your walk history, walk reports, schedules, and recurring walk windows.",
+  "Your emergency contact details and notification settings.",
+];
+
+const retained = [
+  ["Payment and transaction records", "Up to 7 years", "Required for tax and financial recordkeeping. These contain amount, date, and what the charge was for — never your card number (card data lives only with Stripe)."],
+  ["Encrypted backups", "Up to 90 days", "Deleted data is purged from rolling backups within 90 days of your account deletion."],
+];
+---
+
+<Layout
+  title="Delete Your Account — Sniffr Pack"
+  description="How to delete your Sniffr Pack account and the data associated with it: the steps, what gets deleted, what is retained, and how long it takes."
+>
+  <article class="px-6 py-20 md:py-28">
+    <div class="mx-auto max-w-3xl">
+      <header>
+        <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+          Account &amp; Data
+        </p>
+        <h1 class="font-display text-5xl md:text-7xl font-semibold tracking-tight mt-3 text-balance">
+          Delete your account
+        </h1>
+        <p class="mt-6 text-sm text-[var(--color-muted)]">
+          For the Sniffr Pack app &middot; Last updated {updated}
+        </p>
+        <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] leading-relaxed">
+          This page explains how to request deletion of your <strong>Sniffr Pack</strong>
+          account (the Sniffr mobile app for Android and iOS, and the web app at
+          app.sniffrpack.com), what data is deleted, what is kept, and how long it takes.
+          Sniffr is operated by Papyrus Labs, Maplewood, New Jersey, United States.
+        </p>
+      </header>
+
+      <!-- Steps -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          How to request deletion
+        </h2>
+        <ol class="mt-6 space-y-5 text-lg leading-relaxed">
+          <li class="flex gap-4">
+            <span class="text-[var(--color-accent)] font-semibold">1.</span>
+            <span>
+              Email <a href="mailto:joseph@papyruslabs.ai?subject=Delete%20my%20account"
+              class="underline decoration-[var(--color-rule)] hover:text-[var(--color-accent)] hover:decoration-[var(--color-accent)]">joseph@papyruslabs.ai</a>
+              <strong>from the email address on your account</strong>, with the subject
+              <em>&ldquo;Delete my account.&rdquo;</em> (Sending from your account email is how
+              we verify the request is really you.)
+            </span>
+          </li>
+          <li class="flex gap-4">
+            <span class="text-[var(--color-accent)] font-semibold">2.</span>
+            <span>
+              We confirm the request and delete your account and its associated personal
+              data within <strong>30 days</strong>. We&rsquo;ll email you when it&rsquo;s done.
+            </span>
+          </li>
+        </ol>
+        <p class="mt-6 text-lg text-[var(--color-muted)] leading-relaxed">
+          You can also ask your dog-walking business (your &ldquo;tenant,&rdquo; e.g. Hamilton
+          Bark) to remove you &mdash; they are the controller of your data and can initiate
+          deletion on your behalf. And at any time, without deleting your whole account, you
+          can delete individual <strong>photos</strong> and <strong>messages</strong> yourself
+          directly in the app.
+        </p>
+      </section>
+
+      <!-- What is deleted -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          What is deleted
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          When your account is deleted, we remove:
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          {deleted.map((item) => (
+            <li class="flex gap-3">
+              <span class="text-[var(--color-accent)] font-semibold">&middot;</span>
+              <span class="text-[var(--color-muted)]">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <!-- What is retained -->
+      <section class="mt-16">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          What is kept, and for how long
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          A small amount of data is retained after deletion, only where the law requires it:
+        </p>
+        <div class="mt-6 overflow-x-auto">
+          <table class="w-full border-collapse text-base">
+            <thead>
+              <tr class="border-b border-[var(--color-rule)] text-left">
+                <th class="py-2 pr-4 font-semibold">Data</th>
+                <th class="py-2 pr-4 font-semibold">Retention</th>
+                <th class="py-2 font-semibold">Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              {retained.map(([data, period, why]) => (
+                <tr class="border-b border-[var(--color-rule)] align-top">
+                  <td class="py-2 pr-4 font-medium">{data}</td>
+                  <td class="py-2 pr-4 text-[var(--color-muted)]">{period}</td>
+                  <td class="py-2 text-[var(--color-muted)]">{why}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="mt-16 border-t border-[var(--color-rule)] pt-10">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          Questions
+        </h2>
+        <p class="mt-4 text-lg text-[var(--color-muted)] leading-relaxed">
+          For anything about account deletion or your data, email
+          <a href="mailto:joseph@papyruslabs.ai"
+          class="underline decoration-[var(--color-rule)] hover:text-[var(--color-accent)] hover:decoration-[var(--color-accent)]">joseph@papyruslabs.ai</a>
+          or write to Papyrus Labs, Maplewood, NJ, United States. See our
+          <a href="/privacy"
+          class="underline decoration-[var(--color-rule)] hover:text-[var(--color-accent)] hover:decoration-[var(--color-accent)]">Privacy Policy</a>
+          for the full picture of what we collect and how it&rsquo;s handled.
+        </p>
+      </section>
+    </div>
+  </article>
+</Layout>
