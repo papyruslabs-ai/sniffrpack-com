@@ -14,8 +14,9 @@ import nessie from "../assets/nessie.jpg";
           <span class="text-[var(--color-accent)]">Sniffr is built around the dog.</span>
         </h1>
         <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] measure">
-          Multi-walker scheduling, client intake, photos, payments, reports &mdash; built
-          with Hamilton Bark, who run roughly 130 walks a week on Sniffr today.
+          Scheduling, intake, photos, payments, and walk reports for dog-care businesses.
+          Built alongside a real one, Hamilton Bark, who run about 130 walks a week on
+          Sniffr today.
         </p>
         <div class="mt-10 flex flex-wrap items-center gap-4">
           <a
@@ -31,6 +32,15 @@ import nessie from "../assets/nessie.jpg";
             See the roadmap &rarr;
           </a>
         </div>
+        <p class="mt-6 text-sm text-[var(--color-muted)]">
+          Here because your walker uses Sniffr?
+          <a
+            href="https://app.sniffrpack.com"
+            class="underline decoration-[var(--color-rule)] underline-offset-4 hover:decoration-[var(--color-accent)] hover:text-[var(--color-accent)]"
+          >
+            Open the app &rarr;
+          </a>
+        </p>
       </div>
 
       <div class="md:col-span-5 order-1 md:order-2">
@@ -75,43 +85,118 @@ import nessie from "../assets/nessie.jpg";
 
   <hr class="mx-auto max-w-5xl border-[var(--color-rule)]" />
 
-  <!-- Thesis -->
+  <!-- Showcase: a day in your dog's life -->
   <section class="px-6 py-24 md:py-32">
-    <div class="mx-auto max-w-3xl">
-      <h2 class="font-display text-4xl md:text-6xl font-semibold tracking-tight text-balance">
-        Dog care isn't a marketplace.<br />
-        <span class="text-[var(--color-accent)]">It's a referral network.</span>
-      </h2>
+    <div class="mx-auto max-w-5xl">
+      <div class="max-w-3xl">
+        <h2 class="font-display text-4xl md:text-6xl font-semibold tracking-tight text-balance">
+          A day in your dog's life, kept.
+        </h2>
+        <p class="mt-6 text-lg md:text-xl text-[var(--color-muted)] measure">
+          Every walk leaves something behind. Sniffr turns the day into a record that
+          belongs to the dog.
+        </p>
+      </div>
 
-      <div class="mt-10 space-y-6 text-lg leading-relaxed">
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-start">
+        <!-- Walk-report timeline card (larger, leads) -->
+        <figure class="md:col-span-7 bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-20px_rgba(184,80,30,0.2)] ring-1 ring-[var(--color-rule)] p-6 md:p-7">
+          <div class="flex items-baseline justify-between gap-3">
+            <span class="font-display text-2xl font-semibold tracking-tight">Biscuit</span>
+            <span class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Today</span>
+          </div>
+          <p class="mt-3 text-[var(--color-muted)] leading-relaxed italic">
+            "On the way to the dog park he saw an ambulance on 6th and sang the song of
+            his people."
+          </p>
+
+          <ol class="mt-6 space-y-5">
+            <li class="flex gap-3">
+              <div class="flex flex-col items-center pt-1">
+                <span class="text-base leading-none">🐕</span>
+                <span class="w-px flex-1 min-h-[1.25rem] bg-[var(--color-rule)] mt-2"></span>
+              </div>
+              <div class="pb-1">
+                <p class="text-sm text-[var(--color-muted)] uppercase tracking-wider">Pickup</p>
+                <p class="text-base">leash-ready</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <div class="flex flex-col items-center pt-1">
+                <span class="text-base leading-none">🚑🎶</span>
+                <span class="w-px flex-1 min-h-[1.25rem] bg-[var(--color-rule)] mt-2"></span>
+              </div>
+              <div class="pb-1">
+                <p class="text-sm text-[var(--color-muted)] uppercase tracking-wider">6th &amp; Main</p>
+                <p class="text-base">ambulance song</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <div class="flex flex-col items-center pt-1">
+                <span class="text-base leading-none">🐾</span>
+              </div>
+              <div>
+                <p class="text-sm text-[var(--color-muted)] uppercase tracking-wider">Dog park</p>
+                <p class="text-base">played with Goldie</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="mt-6 pt-4 border-t border-[var(--color-rule)] text-xs text-[var(--color-muted)] flex items-center gap-2">
+            <svg width="12" height="12" viewBox="0 0 64 64" fill="currentColor" class="text-[var(--color-accent)]">
+              <circle cx="20" cy="22" r="6"/>
+              <circle cx="44" cy="22" r="6"/>
+              <circle cx="12" cy="36" r="5"/>
+              <circle cx="52" cy="36" r="5"/>
+              <ellipse cx="32" cy="44" rx="14" ry="11"/>
+            </svg>
+            <span>A Sniffr walk report</span>
+          </div>
+        </figure>
+
+        <!-- Memory / photo moment card (smaller, offset) -->
+        <figure class="md:col-span-5 md:mt-14 bg-white rounded-2xl overflow-hidden shadow-[0_20px_60px_-20px_rgba(184,80,30,0.2)] ring-1 ring-[var(--color-rule)]">
+          <div class="aspect-[4/3] bg-[var(--color-bg)] flex items-center justify-center border-b border-[var(--color-rule)]">
+            <svg width="40" height="40" viewBox="0 0 64 64" fill="currentColor" class="text-[var(--color-rule)]">
+              <circle cx="20" cy="22" r="6"/>
+              <circle cx="44" cy="22" r="6"/>
+              <circle cx="12" cy="36" r="5"/>
+              <circle cx="52" cy="36" r="5"/>
+              <ellipse cx="32" cy="44" rx="14" ry="11"/>
+            </svg>
+          </div>
+          <figcaption class="p-5">
+            <div class="flex items-baseline justify-between gap-3">
+              <span class="font-display text-xl font-semibold tracking-tight">Goldie</span>
+              <span class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Sunday</span>
+            </div>
+            <p class="mt-3 text-[var(--color-muted)] leading-relaxed">
+              "Caught mid-zoomie at the park, per usual."
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2 text-sm">
+              <span class="px-2.5 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🌀 zoomies</span>
+              <span class="px-2.5 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🐕‍🦺 with Biscuit</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="mt-16 max-w-3xl space-y-6 text-lg leading-relaxed">
         <p>
-          Rover and Wag built their businesses on a wrong assumption — that dog walking is
-          a labor market where strangers trade hours for dollars. That works for one walk.
-          It doesn't work for the <em>relationship</em>, which is the actual product. Real
-          dog care lives in trust networks: a neighbor recommends Sebastian, Sebastian's
-          customers tell their friends, walkers earn relationships and keep them for years.
-          Then a marketplace tries to wedge a 20% tax onto a relationship the walker built.
+          Humans and dogs have been shaping each other since before written language
+          existed. They notice what we can't, faster and farther than we can, and in
+          return one person keeps them safe for the whole of their life. That bargain is
+          older than the alphabet, and it still runs every morning at your dog park. We
+          think software for dog care should be built the way the bargain is: around the
+          dog.
         </p>
         <p>
-          Time To Pet, Scout, and Precise figured out that walkers shouldn't be marketplace
-          inventory — but they still treat dog care as a billing problem. Their data model
-          is the invoice. Photos and notes hang off the invoice as decorations. The dog is
-          a line item.
-        </p>
-
-        <p class="font-display text-2xl md:text-3xl pt-4">
-          Sniffr starts from the dog.
-        </p>
-
-        <ul class="space-y-3 pl-6 border-l-2 border-[var(--color-accent)]">
-          <li>Photos belong to the dog and outlive any single visit.</li>
-          <li>The walker's relationship to the dog is a <em>learned</em> signal — not a rule you declare and forget.</li>
-          <li>Service shapes — walks today, more soon — plug into a substrate that knows the dog's life as a continuum.</li>
-        </ul>
-
-        <p>
-          A walker who switches to Sniffr feels the difference within a week. The software
-          is shaped like the work, not shaped like the bill.
+          <a
+            href="/why"
+            class="text-[var(--color-accent)] font-medium hover:underline"
+          >
+            Read why we built it this way &rarr;
+          </a>
         </p>
       </div>
     </div>
@@ -144,11 +229,6 @@ import nessie from "../assets/nessie.jpg";
           By the time you say hello at the M&amp;G, you already know their dog's name,
           their vet, and how often they want to walk.
         </p>
-
-        <div class="border-l-2 border-[var(--color-rule)] pl-6 text-[var(--color-muted)] italic">
-          Time To Pet onboarding is walker-mediated email tag. Sniffr inverts the polarity:
-          the client onboards themselves, attached to the right walker, in one scan.
-        </div>
       </div>
     </div>
   </section>
@@ -167,27 +247,24 @@ import nessie from "../assets/nessie.jpg";
 
       <div class="mt-10 space-y-6 text-lg leading-relaxed">
         <p>
+          Recurring dog care isn't a calendar full of appointments you re-book every week.
+          It's a handful of standing commitments. Sniffr's scheduling is shaped like that.
+        </p>
+        <p>
           A <strong>Window</strong> is a standing arrangement: <em>"Wednesday evenings
           between 6 and 7:30, 30 minutes with Wally."</em> You sell those once. Walks get
           generated every week the Window is active.
         </p>
         <p>
-          A <strong>Horizon</strong> is your commitment radius — how far ahead you're
-          willing to lock in walks. Some walkers run a 3-day Horizon; some run 21. As your
-          team grows, you raise it. The same software fits a solo walker and a 20-walker
-          shop because the radius is yours to choose.
+          A <strong>Horizon</strong> is how far ahead you lock walks in. Some walkers run
+          three days out, some run three weeks. Solo walker or twenty-walker shop, you set
+          how far you plan. Raise it as your team grows.
         </p>
         <p>
           Pricing is captured the moment a Window is created. Payment doesn't run until
           the Horizon is locked. Predictable cash flow on a cadence you control — not
           a per-walk billing scramble.
         </p>
-
-        <div class="border-l-2 border-[var(--color-rule)] pl-6 text-[var(--color-muted)] italic">
-          Most dog software books visits with optional recurrence — schedule-as-calendar.
-          Sniffr's primitives match how a multi-walker shop actually thinks about its week:
-          standing commitments, planned horizons, and walks as the output of both.
-        </div>
       </div>
     </div>
   </section>
@@ -209,19 +286,6 @@ import nessie from "../assets/nessie.jpg";
           Walkers don't have to be writers. Tell Sniffr what happened on the walk — out
           loud — and we'll turn it into a tagged, searchable timeline for the dog.
         </p>
-
-        <blockquote class="bg-white/60 border border-[var(--color-rule)] rounded-lg p-6 my-8 not-italic">
-          <p class="text-[var(--color-muted)]">
-            "Picked up Biscuit. He barked when I came in, but as soon as he saw the leash
-            he knew what was up. On the way to the dog park he saw an ambulance on 6th and
-            sang the song of his people. Played with Goldie at the park."
-          </p>
-          <div class="mt-4 flex flex-wrap gap-2 text-sm">
-            <span class="px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🐕 leash-ready</span>
-            <span class="px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🚑🎶 ambulance song</span>
-            <span class="px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">🐾 played with Goldie</span>
-          </div>
-        </blockquote>
 
         <p>
           Each moment becomes a structured event on the dog's timeline, tagged with emojis,
@@ -319,12 +383,9 @@ import nessie from "../assets/nessie.jpg";
       <div class="mt-10 space-y-6 text-lg leading-relaxed">
         <p>
           Self-serve walker signup, AI-assisted reports, walker-to-walker work sharing,
-          MCP for client AI agents, multi-service plugins, and the social layer that
-          turns dog parks into Packs and dogs into Circles &mdash; all anticipated by the
-          end of 2026.
-        </p>
-        <p>
-          The tables are built. The plugins are partially written. The agents are running.
+          the dog's own record opening to every family, the social layer that turns dog
+          parks into Packs and dogs into Circles, and service plugins beyond walks &mdash;
+          shipping in that order, through 2026 and into 2027.
         </p>
         <a
           href="/roadmap"
@@ -393,9 +454,19 @@ import nessie from "../assets/nessie.jpg";
         cover data migration, Stripe Connect, and walker training.
       </p>
 
+      <p class="mt-6 text-sm text-[var(--color-muted)]">
+        Sniffr is free until your fourth client pays.
+        <a
+          href="/pricing"
+          class="underline decoration-[var(--color-rule)] underline-offset-4 hover:decoration-[var(--color-accent)] hover:text-[var(--color-accent)]"
+        >
+          See pricing &rarr;
+        </a>
+      </p>
+
       <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
         <a
-          href="mailto:joseph@sniffrpack.com?subject=Sniffr%20setup%20call"
+          href="mailto:joseph@papyruslabs.ai?subject=Sniffr%20setup%20call"
           class="bg-[var(--color-ink)] text-[var(--color-bg)] px-8 py-4 rounded-md font-medium text-lg hover:bg-[var(--color-accent)] transition-colors"
         >
           Book a setup call

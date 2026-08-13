@@ -1,0 +1,178 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Sniffr — Pricing">
+  <!-- Hero -->
+  <section class="px-6 pt-16 md:pt-24 pb-16 md:pb-20">
+    <div class="mx-auto max-w-3xl">
+      <p class="text-sm uppercase tracking-widest text-[var(--color-accent)] font-semibold">
+        Pricing
+      </p>
+      <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight mt-3 text-balance">
+        Free until your fourth client pays.
+      </h1>
+      <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] measure">
+        Every tier is the whole product for the dogs in it: walk reports, photos,
+        scheduling, payments, and an AI connector for every family. You pay when your
+        business grows, and only then.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tiers -->
+  <section class="px-6 pb-24 md:pb-32">
+    <div class="mx-auto max-w-5xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
+        <!-- Sniff -->
+        <div class="bg-white rounded-2xl ring-2 ring-[var(--color-accent)] p-6 md:p-7 shadow-[0_20px_60px_-20px_rgba(184,80,30,0.2)]">
+          <div class="flex items-baseline justify-between gap-3">
+            <h2 class="font-display text-2xl font-semibold tracking-tight">Sniff</h2>
+            <span class="text-xs uppercase tracking-wider px-2.5 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)] text-[var(--color-accent)] font-semibold">Start here</span>
+          </div>
+          <p class="mt-4">
+            <span class="font-display text-4xl font-semibold">Free</span>
+            <span class="text-[var(--color-muted)]"> to 3 paying clients</span>
+          </p>
+          <p class="mt-1 text-sm text-[var(--color-muted)]">then $29/mo</p>
+          <p class="mt-5 text-[var(--color-muted)] leading-relaxed">
+            The solo operator's whole toolkit. You walk the dogs; Sniffr runs the rest.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm leading-relaxed">
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Clients book and pay through the app</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Walk reports with photos and voice</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Windows and Horizon scheduling</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Every dog's record, kept for its family</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>AI connector for you and your clients</span></li>
+          </ul>
+          <p class="mt-6 pt-5 border-t border-[var(--color-rule)] text-sm text-[var(--color-muted)] leading-relaxed">
+            Your first three paying clients are free forever. The paywall is client
+            number four. Which is to say: the paywall is your business working.
+          </p>
+        </div>
+
+        <!-- Fetch -->
+        <div class="bg-white rounded-2xl ring-1 ring-[var(--color-rule)] p-6 md:p-7">
+          <h2 class="font-display text-2xl font-semibold tracking-tight">Fetch</h2>
+          <p class="mt-4">
+            <span class="font-display text-4xl font-semibold">$59</span>
+            <span class="text-[var(--color-muted)]">/mo</span>
+          </p>
+          <p class="mt-1 text-sm text-[var(--color-muted)]">$590/yr (two months free)</p>
+          <p class="mt-5 text-[var(--color-muted)] leading-relaxed">
+            Everything in Sniff, plus the parts that go get the next client. Named for
+            what it does.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm leading-relaxed">
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>QR intake: your business card is your intake form</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Onboarding pipeline and Meet &amp; Greet tracking</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Which card brought which client, tracked</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Your brand on reports, booking, and emails <span class="text-xs uppercase tracking-wider text-[var(--color-muted)] border border-[var(--color-rule)] rounded-full px-2 py-0.5 ml-1">soon</span></span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Your own domain on your booking page <span class="text-xs uppercase tracking-wider text-[var(--color-muted)] border border-[var(--color-rule)] rounded-full px-2 py-0.5 ml-1">soon</span></span></li>
+          </ul>
+          <p class="mt-6 pt-5 border-t border-[var(--color-rule)] text-sm text-[var(--color-muted)] leading-relaxed">
+            Sniff runs the business you have. Fetch brings you the one you're building.
+          </p>
+        </div>
+
+        <!-- Pack -->
+        <div class="bg-white rounded-2xl ring-1 ring-[var(--color-rule)] p-6 md:p-7">
+          <h2 class="font-display text-2xl font-semibold tracking-tight">Pack</h2>
+          <p class="mt-4">
+            <span class="font-display text-4xl font-semibold">$99</span>
+            <span class="text-[var(--color-muted)]">/mo</span>
+          </p>
+          <p class="mt-1 text-sm text-[var(--color-muted)]">+ $15 per active walker</p>
+          <p class="mt-5 text-[var(--color-muted)] leading-relaxed">
+            Everything in Fetch, for a team. A multi-walker shop is a pack; this tier is
+            named for what you built.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm leading-relaxed">
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Add walkers; Sniffr learns who walks who</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Assignment, capacity, and blackout tools</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Team scheduling across your whole Horizon</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Time off and PTO tracking</span></li>
+            <li class="flex gap-2"><span class="text-[var(--color-accent)]">✓</span><span>Gusto payroll sync <span class="text-xs uppercase tracking-wider text-[var(--color-muted)] border border-[var(--color-rule)] rounded-full px-2 py-0.5 ml-1">soon</span></span></li>
+          </ul>
+          <p class="mt-6 pt-5 border-t border-[var(--color-rule)] text-sm text-[var(--color-muted)] leading-relaxed">
+            An active walker is anyone who walked at least once that month. Nobody on the
+            bench costs you anything.
+          </p>
+        </div>
+      </div>
+
+      <!-- Every tier includes -->
+      <div class="mt-16 max-w-3xl">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+          Every tier, no asterisks
+        </h2>
+        <div class="mt-8 space-y-6 text-lg leading-relaxed">
+          <p>
+            <strong>We never take a cut of your revenue.</strong> Card fees are Stripe's
+            own rates and we add nothing on top. Your prices, your Stripe account, your
+            money. Sniffr's fee is the subscription, full stop.
+          </p>
+          <p>
+            <strong>Your brand on your work.</strong> Walk reports, booking flows, and
+            the intake path carry your business's name, on every tier. The app belongs
+            to the dog; the work belongs to you.
+          </p>
+          <p>
+            <strong>AI included, everywhere.</strong> Your clients can connect their own
+            AI assistant to their dog's record, and you can run your operation through
+            yours. No add-on, no metering, on every tier.
+          </p>
+          <p>
+            <strong>Leave whenever.</strong> Month to month, cancel anytime, and your
+            clients come with you. Annual billing is ten months for twelve.
+          </p>
+        </div>
+      </div>
+
+      <!-- The comparison that matters -->
+      <div class="mt-16 max-w-3xl">
+        <div class="bg-white rounded-2xl ring-1 ring-[var(--color-rule)] p-6 md:p-8">
+          <p class="text-lg leading-relaxed">
+            For scale: the marketplace apps keep 20 to 40 cents of every dollar your
+            business earns. On a typical solo walker's month, that's more than a thousand
+            dollars. Sniffr's biggest tier is $99 and we never touch the transaction.
+          </p>
+        </div>
+        <p class="mt-6 text-sm text-[var(--color-muted)]">
+          And for the families: dog owners never pay Sniffr. The record belongs to the
+          dog, free, whoever they hire.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-20 max-w-3xl">
+        <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight text-balance">
+          Start with the three clients you can't lose.
+        </h2>
+        <p class="mt-6 text-lg text-[var(--color-muted)] leading-relaxed measure">
+          Every walker has a few clients who are more friends than customers. Bring them,
+          try everything, pay nothing. Setup calls are 30 minutes, run by the founder,
+          and your free tier starts the same day.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a
+            href="mailto:joseph@papyruslabs.ai?subject=Sniffr%20setup%20call"
+            class="bg-[var(--color-ink)] text-[var(--color-bg)] px-6 py-3 rounded-md font-medium hover:bg-[var(--color-accent)] transition-colors"
+          >
+            Book a setup call
+          </a>
+          <a
+            href="/roadmap"
+            class="text-[var(--color-ink)] underline decoration-[var(--color-rule)] underline-offset-4 hover:decoration-[var(--color-accent)] hover:text-[var(--color-accent)] px-2 py-3"
+          >
+            See the roadmap &rarr;
+          </a>
+        </div>
+        <p class="mt-8 text-xs text-[var(--color-muted)]">
+          Prices in USD. Items marked "soon" are in active development; the roadmap has
+          dates.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

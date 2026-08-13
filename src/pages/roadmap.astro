@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout
   title="Sniffr Roadmap — 2026"
-  description="The order we're shipping in, and roughly when. Every line below is real, partially built, and on the calendar to land before the end of 2026."
+  description="The order we're shipping in, and roughly when. Every line below is real, partially built, and on the calendar through 2026 into early 2027."
 >
   <article class="px-6 py-20 md:py-28">
     <div class="mx-auto max-w-3xl">
@@ -18,8 +18,12 @@ import Layout from "../layouts/Layout.astro";
         <p class="mt-8 text-lg md:text-xl text-[var(--color-muted)] leading-relaxed">
           Sniffr is built by one founder using a custom AI agent infrastructure that
           ships features at the pace of a small team. Everything below is real, partially
-          built, and on the calendar to land before the end of 2026. We'll move dates as
-          we learn, but not by years.
+          built, and on the calendar. We'll move dates as we learn, but not by years.
+        </p>
+        <p class="mt-4 text-lg md:text-xl text-[var(--color-muted)] leading-relaxed">
+          The order matters. Sniffr grows on two sides &mdash; the businesses that do the
+          work, and the record that belongs to the dog &mdash; and each phase below feeds
+          the next.
         </p>
       </header>
 
@@ -43,6 +47,8 @@ import Layout from "../layouts/Layout.astro";
           <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Self-onboarding QR card &rarr; structured intake &rarr; auto-Calendar Meet &amp; Greet</li>
           <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Voice-to-tagged-events for walks (talk through the walk, get a structured timeline)</li>
           <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Photos as durable dog memories with auto-generated hashtags</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> The Poop Tracker: potty logging on the dog's record, building a rolling baseline for the vet conversation</li>
+          <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Tips that go to the walker</li>
           <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Two-phase auto-positioning: regular-walker inference + statistical time prediction</li>
           <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> BYO Stripe Connect with billing cycles</li>
           <li class="flex gap-3"><span class="text-[var(--color-accent)] font-semibold">&#x2713;</span> Multi-service architecture, proven by BarkVentures running in production at Hamilton Bark</li>
@@ -64,10 +70,11 @@ import Layout from "../layouts/Layout.astro";
           call, and turning on the AI assists that have been shipping in the background.
         </p>
         <ul class="mt-6 space-y-3 text-lg leading-relaxed">
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Self-serve walker signup at sniffrpack.com &rarr; working tenant + Stripe Connect + admin login + branded subdomain end-to-end</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> AI-assist generate: auto-caption drafts on photos, auto-report drafts on walks (always editable; the walker stays in the driver's seat)</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Persisted per-dog personality summaries powering the AI assists</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Data import from Time To Pet, Scout, and Precise &mdash; making the switch a one-click, not a weekend</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Self-serve walker signup at sniffrpack.com &rarr; working tenant + Stripe Connect + admin login + branded subdomain end-to-end</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>The free tier goes self-serve: Sniffr is <a href="/pricing" class="text-[var(--color-accent)] hover:underline">free until your fourth client pays</a></span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>AI-assist generate: auto-caption drafts on photos, auto-report drafts on walks (always editable; the walker stays in the driver's seat)</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Persisted per-dog personality summaries powering the AI assists</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Data import from Time To Pet, Scout, and Precise &mdash; making the switch a one-click, not a weekend</span></li>
         </ul>
       </section>
 
@@ -87,10 +94,10 @@ import Layout from "../layouts/Layout.astro";
           paid for it cleanly.
         </p>
         <ul class="mt-6 space-y-3 text-lg leading-relaxed">
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Tenant-to-tenant work sharing: hand a Window to another Sniffr walker at their rates</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Optional client-side M&amp;G workflow before a handoff (some clients say <em>"I trust anyone you trust"</em>; some don't &mdash; the system supports both)</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Tenant-to-tenant payout flow via Stripe Connect</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Each walker's coverage circle: the trusted nearby Sniffr walkers they can hand work to</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Tenant-to-tenant work sharing: hand a Window to another Sniffr walker at their rates</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Optional client-side M&amp;G workflow before a handoff (some clients say <em>"I trust anyone you trust"</em>; some don't &mdash; the system supports both)</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Tenant-to-tenant payout flow via Stripe Connect</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Each walker's coverage circle: the trusted nearby Sniffr walkers they can hand work to</span></li>
         </ul>
         <p class="mt-6 text-lg leading-relaxed italic text-[var(--color-muted)]">
           V2 is when Sniffr stops being software for <em>one</em> walker's business and
@@ -102,20 +109,30 @@ import Layout from "../layouts/Layout.astro";
       <section class="mt-20">
         <div class="flex items-baseline justify-between flex-wrap gap-2">
           <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
-            V3 &mdash; Ecosystem
+            V3 &mdash; The Dog's Record
           </h2>
           <span class="text-sm font-medium px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">
             Anticipated Q4 2026
           </span>
         </div>
         <p class="mt-4 text-lg text-[var(--color-muted)]">
-          The platform opens &mdash; to other AI agents, and to service shapes beyond walks.
+          Sniffr opens to dog families with no walker attached. The record stops being
+          something you get because you hired someone, and becomes something your dog
+          simply has.
         </p>
         <ul class="mt-6 space-y-3 text-lg leading-relaxed">
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Sniffr MCP server</strong>: client AI agents like ChatGPT, Claude, and Gemini can read a dog's recent walks, photos, and rolling personality context. When a customer asks their assistant <em>"how was Wally's week?"</em>, they get a real answer. <span class="text-[var(--color-muted)]">(Already built; shipping pending security hardening so a client agent can't be used to bypass tenant rules.)</span></li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Multi-service rollout: boarding, daycare, grooming, and training plugins, on the same architecture BarkVentures already proves</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Bespoke service shapes</strong>: Hamilton Bark designed BarkVenture for mountain trips with their dogs; if you have a service shape that doesn't exist yet, talk to us. Once we build it, every Sniffr walker can use it.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Tenant-free signup: download Sniffr, add your dog. No business required.</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span><strong>Story</strong>: photos, health, and daily life in one timeline. When you do have a walker, their reports land in the same stream you write in.</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>The Poop Tracker's rolling baseline becomes the promise: the log your vet wishes you had, and the one thing you can't build retroactively</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Photo import that shows you the output first: let Sniffr find your dog in the last 30 days of your camera roll, and see the month as a captioned story before you decide to go further back</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span><strong>Share with vet</strong>: a date-ranged PDF of the whole record &mdash; poop baseline, dated photos, service history across every provider. No single business can produce it. The owner can.</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Connect the assistant your family already uses &mdash; Claude, ChatGPT, or Gemini &mdash; and ask <em>"how was Wally's week?"</em> against the real record. <span class="text-[var(--color-muted)]">(Connector built; shipping pending security hardening so a client agent can't bypass tenant rules.)</span></span></li>
         </ul>
+        <p class="mt-6 text-lg leading-relaxed italic text-[var(--color-muted)]">
+          One record, many authors, the owner holds it. When a walker joins later, they
+          don't hand you a portal into their system &mdash; they fill the gaps in a record
+          you already own.
+        </p>
       </section>
 
       <!-- V4 -->
@@ -129,20 +146,43 @@ import Layout from "../layouts/Layout.astro";
           </span>
         </div>
         <p class="mt-4 text-lg text-[var(--color-muted)]">
-          The dog-owner side of Sniffr comes online, and the social graph that's been
-          computing quietly in the photo-embedding layer surfaces as Circles and Packs.
+          The social graph the record has been quietly computing surfaces as Circles and
+          Packs. This is why the record opens to families first: dogs accumulate at the
+          same parks, and the community features need that density, not a sales team.
         </p>
         <ul class="mt-6 space-y-3 text-lg leading-relaxed">
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Circles</strong> &mdash; your dog's auto-detected network of dogs they've actually met. Triggered when a recognized friend's owner is at the same park at the same time. Confirmed by the photo uploader. No facial-recognition ML &mdash; geofence + app metadata + a one-tap <em>"is that Goldie?"</em> prompt gets us there.</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> <strong>Packs</strong> &mdash; branded human communities that form around shared parks and times. Invite links, shared photo streams, event management, and a Pack fund.</li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> Walker advertising against Packs: <em>"20% of June's walks booked through this link goes to the Sunday Morning Dachshund Pack."</em></li>
-          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span> The referral network made visible, measurable, and economically active.</li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span><strong>Circles</strong> &mdash; your dog's auto-detected network of dogs they've actually met. Triggered when a recognized friend's owner is at the same park at the same time. Confirmed by the photo uploader. No facial-recognition ML &mdash; geofence + app metadata + a one-tap <em>"is that Goldie?"</em> prompt gets us there.</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Photos of your dog that you didn't take: when a Circle photo is confirmed, both families receive it</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span><strong>Packs</strong> &mdash; branded human communities that form around shared parks and times. Invite links, shared photo streams, event management, and a Pack fund.</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Walker advertising against Packs: <em>"20% of June's walks booked through this link goes to the Sunday Morning Dachshund Pack."</em></span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>The referral network made visible, measurable, and economically active.</span></li>
         </ul>
         <p class="mt-6 text-lg leading-relaxed italic text-[var(--color-muted)]">
           V4 is when the consumer side of Sniffr starts driving walker acquisition on its
           own. Owners love their Pack, push their walker to join Sniffr. Walkers join
           because their Pack is here. The flywheel closes.
         </p>
+      </section>
+
+      <!-- V5 -->
+      <section class="mt-20">
+        <div class="flex items-baseline justify-between flex-wrap gap-2">
+          <h2 class="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            V5 &mdash; Every Service
+          </h2>
+          <span class="text-sm font-medium px-3 py-1 rounded-full bg-[var(--color-bg)] border border-[var(--color-rule)]">
+            Anticipated 2027
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-[var(--color-muted)]">
+          Boarding, daycare, grooming, and training &mdash; each one a new author on the
+          same record, and a new kind of business Sniffr serves.
+        </p>
+        <ul class="mt-6 space-y-3 text-lg leading-relaxed">
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Service plugins on the architecture BarkVentures already proves in production</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span>Each service deepens the dog's record and opens a new market at once: the groomer is a different business, the dog is the same dog. Their grooming records carry their brand; your walk reports carry yours; the family sees one timeline.</span></li>
+          <li class="flex gap-3"><span class="text-[var(--color-muted)]">&middot;</span><span><strong>Bespoke service shapes</strong>: Hamilton Bark designed BarkVenture for mountain trips with their dogs; if you have a service shape that doesn't exist yet, talk to us. Once we build it, every Sniffr business can use it.</span></li>
+        </ul>
       </section>
 
       <!-- How we ship -->
@@ -158,7 +198,8 @@ import Layout from "../layouts/Layout.astro";
             transaction, and treat your customers as inventory. Or <strong>invoicing
             platforms</strong> like Time To Pet, Scout, and Precise &mdash; older, slower,
             originally built around the bill and retrofitted with everything else over the
-            years.
+            years. Both scope the dog's history to the business that made it. Sniffr scopes
+            it to the dog.
           </p>
           <p>
             Sniffr is neither. It's a product of <strong>Papyrus Labs AI</strong>, a research

@@ -3,8 +3,8 @@ const path = Astro.url.pathname;
 ---
 
 <nav class="border-b border-[var(--color-rule)]">
-  <div class="mx-auto max-w-5xl px-6 py-5 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-2 text-[var(--color-ink)]">
+  <div class="mx-auto max-w-5xl px-6 py-5 flex items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2 text-[var(--color-ink)] shrink-0">
       <svg width="22" height="22" viewBox="0 0 64 64" fill="currentColor" class="text-[var(--color-accent)]">
         <circle cx="20" cy="22" r="6"/>
         <circle cx="44" cy="22" r="6"/>
@@ -14,12 +14,24 @@ const path = Astro.url.pathname;
       </svg>
       <span class="font-display text-xl font-semibold tracking-tight">Sniffr</span>
     </a>
-    <div class="flex items-center gap-7 text-sm font-medium">
+    <div class="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 md:gap-7 text-sm font-medium">
+      <a
+        href="/why"
+        class={`hover:text-[var(--color-accent)] transition-colors ${path === "/why" ? "text-[var(--color-accent)]" : "text-[var(--color-muted)]"}`}
+      >
+        Why
+      </a>
       <a
         href="/roadmap"
         class={`hover:text-[var(--color-accent)] transition-colors ${path === "/roadmap" ? "text-[var(--color-accent)]" : "text-[var(--color-muted)]"}`}
       >
         Roadmap
+      </a>
+      <a
+        href="/pricing"
+        class={`hover:text-[var(--color-accent)] transition-colors ${path === "/pricing" ? "text-[var(--color-accent)]" : "text-[var(--color-muted)]"}`}
+      >
+        Pricing
       </a>
       <a
         href="https://app.sniffrpack.com"
