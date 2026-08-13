@@ -40,3 +40,6 @@ body {
 .measure {
   max-width: 42rem;
 }
+
+/* cache-key bump 2026-08-13 */
+:root { --deploy: "2026-08-13"; }
